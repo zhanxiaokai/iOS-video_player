@@ -42,20 +42,12 @@ NSString * const MAX_BUFFERED_DURATION = @"Max Buffered Duration";
     });
     [self test1];
 }
-- (void) test3{
-    NSLog(@"3");
-}
-- (void) test2{
-    NSLog(@"2");
-}
-- (void) test1 {
-    NSLog(@"1");
-}
+
 - (IBAction)forwardToPlayer:(id)sender {
     NSLog(@"forward local player page...");
     NSString* videoFilePath = [CommonUtil bundlePath:@"recording.flv"];
 //    videoFilePath = @"http://wspull01.live.changbalive.com/easylive/1709828.flv";
-    videoFilePath = [CommonUtil bundlePath:@"test-1.flv"];
+    videoFilePath = [CommonUtil bundlePath:@"test.flv"];
     BOOL usingHWCodec = YES;
     ELVideoViewPlayerController *vc = [ELVideoViewPlayerController viewControllerWithContentPath:videoFilePath contentFrame:self.view.bounds parameters:_requestHeader];
     [[self navigationController] pushViewController:vc animated:YES];

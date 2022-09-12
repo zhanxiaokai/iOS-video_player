@@ -31,11 +31,6 @@
 		188E050F1F14A14A00BF4345 /* ELVideoViewPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E050E1F14A14A00BF4345 /* ELVideoViewPlayerController.m */; };
 		188E05121F14B7BD00BF4345 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E05111F14B7BD00BF4345 /* LoadingView.m */; };
 		188E05151F14B88600BF4345 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E05141F14B88600BF4345 /* libiconv.2.4.0.tbd */; };
-		34B011DF1F975A0300EB6312 /* test-1.flv in Resources */ = {isa = PBXBuildFile; fileRef = 34B011DD1F9759AB00EB6312 /* test-1.flv */; };
-		34B011E01F975A0600EB6312 /* test-2.flv in Resources */ = {isa = PBXBuildFile; fileRef = 34B011DB1F9759AB00EB6312 /* test-2.flv */; };
-		34B011E11F975A0900EB6312 /* test-3.flv in Resources */ = {isa = PBXBuildFile; fileRef = 34B011DE1F9759AB00EB6312 /* test-3.flv */; };
-		34B011E21F975A0C00EB6312 /* test-4.flv in Resources */ = {isa = PBXBuildFile; fileRef = 34B011DA1F9759AB00EB6312 /* test-4.flv */; };
-		34B011E31F975A0F00EB6312 /* test-5.flv in Resources */ = {isa = PBXBuildFile; fileRef = 34B011DC1F9759AB00EB6312 /* test-5.flv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,11 +171,6 @@
 		188E05101F14B7BD00BF4345 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		188E05111F14B7BD00BF4345 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		188E05141F14B88600BF4345 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
-		34B011DA1F9759AB00EB6312 /* test-4.flv */ = {isa = PBXFileReference; lastKnownFileType = file; name = "test-4.flv"; path = "../../../../../../Desktop/bitrate_test/test-4.flv"; sourceTree = "<group>"; };
-		34B011DB1F9759AB00EB6312 /* test-2.flv */ = {isa = PBXFileReference; lastKnownFileType = file; name = "test-2.flv"; path = "../../../../../../Desktop/bitrate_test/test-2.flv"; sourceTree = "<group>"; };
-		34B011DC1F9759AB00EB6312 /* test-5.flv */ = {isa = PBXFileReference; lastKnownFileType = file; name = "test-5.flv"; path = "../../../../../../Desktop/bitrate_test/test-5.flv"; sourceTree = "<group>"; };
-		34B011DD1F9759AB00EB6312 /* test-1.flv */ = {isa = PBXFileReference; lastKnownFileType = file; name = "test-1.flv"; path = "../../../../../../Desktop/bitrate_test/test-1.flv"; sourceTree = "<group>"; };
-		34B011DE1F9759AB00EB6312 /* test-3.flv */ = {isa = PBXFileReference; lastKnownFileType = file; name = "test-3.flv"; path = "../../../../../../Desktop/bitrate_test/test-3.flv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -514,11 +504,6 @@
 		188E05061F14A11A00BF4345 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				34B011DD1F9759AB00EB6312 /* test-1.flv */,
-				34B011DB1F9759AB00EB6312 /* test-2.flv */,
-				34B011DE1F9759AB00EB6312 /* test-3.flv */,
-				34B011DA1F9759AB00EB6312 /* test-4.flv */,
-				34B011DC1F9759AB00EB6312 /* test-5.flv */,
 				188E05071F14A11A00BF4345 /* test.flv */,
 			);
 			path = resource;
@@ -628,6 +613,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -650,11 +636,6 @@
 			files = (
 				188E04571F14852200BF4345 /* Assets.xcassets in Resources */,
 				188E047E1F14856100BF4345 /* ViewController.xib in Resources */,
-				34B011E31F975A0F00EB6312 /* test-5.flv in Resources */,
-				34B011DF1F975A0300EB6312 /* test-1.flv in Resources */,
-				34B011E21F975A0C00EB6312 /* test-4.flv in Resources */,
-				34B011E01F975A0600EB6312 /* test-2.flv in Resources */,
-				34B011E11F975A0900EB6312 /* test-3.flv in Resources */,
 				188E050B1F14A11A00BF4345 /* test.flv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -836,7 +817,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/video_player/FFmpeg",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.phuket.tour.video-player1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phuket.tour.video-player5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -855,7 +836,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/video_player/FFmpeg",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.phuket.tour.video-player1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phuket.tour.video-player5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
